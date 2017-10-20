@@ -87,8 +87,6 @@ gem 'maruku', '~> 0.7.3'
 group :development, :test do
 end
 
-group :development, :test do
-end
 
 group :development, :test do
 end
