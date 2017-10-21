@@ -145,6 +145,7 @@ class MindappController < ApplicationController
     @runseq.save
     refresh_to "/", :alert => "Sorry opeation error at  #{@xmain.id} #{@xvars['error']}"
   end
+  ## run_output.haml 
   def run_output
     init_vars(params[:id])
     service= @xmain.service

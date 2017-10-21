@@ -15,13 +15,6 @@ GIT
       tilt
 
 GIT
-  remote: https://github.com/kul1/mindapp2.git
-  revision: 6b4c912b615e0e0b0411104818f0bbf8bd94b904
-  branch: v0.1.1.6
-  specs:
-    mindapp2 (0.1.1.6.pre.alpha)
-
-GIT
   remote: https://github.com/mongodb/mongoid.git
   revision: 51f063f6d35ca27d7ecabd9a1b4beceb30d2518b
   specs:
@@ -174,6 +167,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mimemagic (0.3.2)
+    mindapp2 (0.1.1.5)
     mini_mime (0.1.4)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
@@ -362,7 +356,7 @@ DEPENDENCIES
   mail
   maruku (~> 0.7.3)
   meta-tags
-  mindapp2!
+  mindapp2
   mongo (~> 2.2)
   mongoid!
   mongoid-paperclip

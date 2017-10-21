@@ -1,0 +1,34 @@
+{\tt \symbol{60}}\%= File.read(`README.md') \%{\tt \symbol{62}}
+
+
+\vspace{.5em} \hrule \vspace{.5em}
+\hypertarget{help_under_construction_dui}{}\section*{{Help (UNDER CONSTRUCTION: DUI)}}\label{help_under_construction_dui}
+
+{\tt \symbol{60}}\%= render :partial={\tt \symbol{62}}`mindapp/modul.md', :collection={\tt \symbol{62}} Mindapp::Module.all.asc(:seq) \%{\tt \symbol{62}}
+
+
+\vspace{.5em} \hrule \vspace{.5em}
+\hypertarget{admin}{}\section*{{Admin}}\label{admin}
+
+\hypertarget{data_structure}{}\subsection*{{Data Structure}}\label{data_structure}
+
+{\tt \symbol{60}}\%- models= @app.elements``//node@TEXT=`models''' \%{\tt \symbol{62}}
+
+{\tt \symbol{60}}\%= render :partial={\tt \symbol{62}}`mindapp/model.md', :collection={\tt \symbol{62}} models.map \{|m| m.attributes``TEXT'' \} \%{\tt \symbol{62}}
+
+
+\vspace{.5em} \hrule \vspace{.5em}
+\hypertarget{contents}{}\section*{{Contents}}\label{contents}
+
+\hypertarget{markdown}{}\subsection*{{markdown}}\label{markdown}
+
+This document created and edited with 
+
+Contents:
+
+\begin{itemize}%
+\item Requirement at {\colorbox[rgb]{1.00,0.93,1.00}{\tt README\char46md}}
+\item Controller Help at {\colorbox[rgb]{1.00,0.93,1.00}{\tt app\char47controllers\char47system\char46md}}
+\item Project at {\colorbox[rgb]{1.00,0.93,1.00}{\tt app\char47views\char47project\char47\char60\char3591\char3634\char3609\char62\char46md}} * *
+
+\end{itemize}

@@ -5,8 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 ruby '2.4.2'
-gem 'mindapp2', github: 'kul1/mindapp2', branch: 'v0.1.1.6'
-#gem 'mindapp2', :path => '/Users/kul/mindapp2/gem/mindapp2'
+#gem 'mindapp2', github: 'kul1/mindapp2', branch: 'v0.1.1.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.1.4'
 # Use Puma as the app server
@@ -84,9 +83,6 @@ group :development, :test do
 end
 
 gem 'maruku', '~> 0.7.3'
-group :development, :test do
-end
 
+gem 'mindapp2'
 
-group :development, :test do
-end
