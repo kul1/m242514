@@ -1,8 +1,8 @@
 <%
-  doc = Mindapp::Doc.new 
+  picture = Picture.new
 %>
-<%= fields_for doc do |f| %>
-  
+<%= fields_for picture do |f| %>
+
   <%= f.label :filename, "Attached document" %>
   <%= f.file_field :filename %>
 <% end %>

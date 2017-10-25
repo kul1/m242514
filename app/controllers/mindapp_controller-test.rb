@@ -213,29 +213,6 @@ class MindappController < ApplicationController
   ####################################################
   # search for original_filename if attached         #
   ####################################################
-  #
-  # def end_form
-  #   init_vars(params[:xmain_id])
-  #   eval "@xvars[@runseq.code] = {} unless @xvars[@runseq.code]"
-  #   params.each { |k,v|
-  #     if params[k].respond_to? :original_filename
-  #       get_image(k, params[k])
-  #     elsif params[k].is_a?(Hash)
-  #       eval "@xvars[@runseq.code][k] = v"
-  #       params[k].each { |k1,v1|
-  #         next unless v1.respond_to?(:original_filename)
-  #         get_image1(k, k1, params[k][k1])
-  #       }
-  #     else
-  #       v = v.to_unsafe_h unless v.class == String
-  #       eval "@xvars[@runseq.code][k] = v"
-  #     end
-  #   }
-  #   end_action
-  # end
-  # Not working at ?(Hash)
-  # Temp hardcode below!! require field to load name :filename
-
 
   def end_form
     init_vars(params[:xmain_id])
@@ -243,13 +220,18 @@ class MindappController < ApplicationController
     params.each { |k,v|
       if params[k].respond_to? :original_filename
         get_image(k, params[k])
-      elsif params[k]['filename'].respond_to? :original_filename
+      elsif params[k].is_a?(Hash)
         eval "@xvars[@runseq.code][k] = v"
         params[k].each { |k1,v1|
-                   next unless v1.respond_to?(:original_filename)
-                   get_image1(k, k1, params[k][k1])
-        }
-
+          if params[k1].respond_to? :original_filename
+            get_image1(k, k1, params[k][k1])
+          elseif params[k1].is_a?(Hash)
+              params[k1].each {|k2,v2|
+                next unless params[k2].respond_to? :original_filename
+                  eval "@xvars[@runseq.code][k] = v"
+              }
+          end
+          }
       else
         v = v.to_unsafe_h unless v.class == String
         eval "@xvars[@runseq.code][k] = v"
@@ -257,12 +239,11 @@ class MindappController < ApplicationController
     }
     end_action
   end
-
   def end_action(next_runseq = nil)
     #    @runseq.status='F' unless @runseq_not_f
     @xmain.xvars= @xvars
     @xmain.status= 'R' # running
-    @xmain.save!
+    @xmain.save
     @runseq.status='F'
     @runseq.user= current_ma_user
     @runseq.stop= Time.now

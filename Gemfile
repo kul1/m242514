@@ -84,5 +84,5 @@ end
 
 gem 'maruku', '~> 0.7.3'
 
-gem 'mindapp2'
-
+gem 'mindapp2', :path => '/Users/kul/mindapp2/gem/mindapp2'
+#gem 'mongoid-paperclip'
