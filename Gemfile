@@ -85,13 +85,12 @@ end
 
 gem 'maruku', '~> 0.7.3'
 
-gem 'mindapp2', :path => '/Users/kul/mindapp2/gem/mindapp2'
 #gem 'mongoid-paperclip'
 
 
 
 group :development, :test do
+#  gem 'mindapp2', :path => '/Users/kul/mindapp2/gem/mindapp2'
 end
 
-group :development, :test do
-end
+gem 'mindapp2', github: 'kul1/mindapp2', branch: 'v0.1.1.6'
