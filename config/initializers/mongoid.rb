@@ -6,4 +6,4 @@
 # (Note this new default only applies to new Rails apps that will be generated with
 # `config.active_record.belongs_to_required_by_default = true` in initializer.)
 #
-Mongoid::Config.belongs_to_required_by_default = false
+#Mongoid::Config.belongs_to_required_by_default = false

@@ -3,7 +3,7 @@ class Picture
   include Mongoid::Document
   # mindapp begin
   include Mongoid::Timestamps
-  field :picture, :type => String
+  field :filename, :type => String
   field :description, :type => String
   belongs_to :user
   # mindapp end

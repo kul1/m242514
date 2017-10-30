@@ -1,0 +1,21 @@
+- @title= "My Docs"
+%p
+- @page_title  = 'All Articlces'
+= paginate @docs
+%table#doc-table
+  %tr
+    %th Name
+    %th FileName
+    %th Created
+    %th Updated
+    %th Delete
+    %th Edit  
+  - @docs.each do |doc|
+    %tr
+      %td= link_to doc.name, :controller=>"mindapp", :action=>"document", :id=>doc.id
+      %td= doc.filename
+      %td= doc.created_at.strftime('%m/%d/%Y')
+      %td= doc.updated_at.strftime('%m/%d/%Y')
+      %td(align='center')= link_to image_tag('delete.png', style:'border:none; float:none;'), "#", :onclick=>"if (confirm('Please Confirm')) {location.hash='/docs/destroy/#{doc.id}';}"
+      %td(align='center')= link_to image_tag('pencil.png', style:'border:none; float:none;'), {controller: "mindapp", action: "init", s: 'docs:xedit_doc', doc_id: doc.id}, data: { confirm: "Please Confirm" }
+

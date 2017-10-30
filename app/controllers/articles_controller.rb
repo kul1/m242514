@@ -63,5 +63,6 @@ class ArticlesController < ApplicationController
   def load_comments
     @comments = @article.comments.find_all
   end
+  #params.permit(:article)
 
 end

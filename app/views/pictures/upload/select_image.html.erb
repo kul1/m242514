@@ -1,8 +1,0 @@
-<%
-  picture = Picture.new
-%>
-<%= fields_for picture do |f| %>
-
-  <%= f.label :filename, "Attached document" %>
-  <%= f.file_field :filename %>
-<% end %>

@@ -1,0 +1,7 @@
+<%
+  doc = Mindapp::Doc.new 
+%>
+<%= fields_for doc do |f| %>
+  <%= f.label :filename, "File Name" %>
+  <%= f.file_field :filename %>
+<% end %>

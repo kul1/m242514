@@ -6,10 +6,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706a5253-6ed1-425b-acf6-ea68dba73bc1" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/mindapp_controller-test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pictures/upload/select_image.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/controllers_brief.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/controllers_complete.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/models_brief.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/models_complete.svg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/m242514.iml" afterPath="$PROJECT_DIR$/.idea/m242514.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/articles.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/articles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/articles_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mindapp_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/mindapp_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pictures_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pictures_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mindapp/index.mm" afterPath="$PROJECT_DIR$/app/mindapp/index.mm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/picture.rb" afterPath="$PROJECT_DIR$/app/models/picture.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/articles/my.haml" afterPath="$PROJECT_DIR$/app/views/articles/my.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/articles/show.html.haml" afterPath="$PROJECT_DIR$/app/views/articles/show.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_full.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_full.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/mindapp/run_form.haml" afterPath="$PROJECT_DIR$/app/views/mindapp/run_form.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/mindapp.rb" afterPath="$PROJECT_DIR$/config/initializers/mindapp.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/mongoid.rb" afterPath="$PROJECT_DIR$/config/initializers/mongoid.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mongoid.yml" afterPath="$PROJECT_DIR$/config/mongoid.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -24,113 +47,108 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/m242514@Development__m242514.coverage" NAME="Development: m242514 Coverage Results" MODIFIED="1508893694269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="m242514" />
+    <SUITE FILE_PATH="coverage/m242514@Development__m242514.coverage" NAME="Development: m242514 Coverage Results" MODIFIED="1509320328389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="m242514" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="m242514" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mindapp_controller.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="my.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/articles/my.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mindapp_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2840">
-              <caret line="285" column="29" lean-forward="false" selection-start-line="285" selection-start-column="13" selection-end-line="285" selection-end-column="29" />
+            <state relative-caret-position="309">
+              <caret line="384" column="37" lean-forward="false" selection-start-line="384" selection-start-column="37" selection-end-line="384" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_form.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/mindapp/run_form.haml">
+      <file leaf-file-name="mime_types.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/mime_types.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-              <folding>
-                <marker date="1508890872000" expanded="true" signature="729:1157" ph="{...}" />
-                <marker date="1508890872000" expanded="true" signature="897:1151" ph="{...}" />
-                <marker date="1508890872000" expanded="true" signature="1050:1145" ph="{...}" />
-                <marker date="1508890872000" expanded="true" signature="1205:1263" ph="{...}" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xmain.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/mindapp/xmain.rb">
+      <file leaf-file-name="index.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/articles/index.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/article.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form_article.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/articles/new_article/form_article.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="creatable.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/bundler/gems/mongoid-51f063f6d35c/lib/mongoid/persistable/creatable.rb">
+      <file leaf-file-name="select_picture.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/articles/upload/select_picture.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lifecycle.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/bundler/gems/mongoid-51f063f6d35c/lib/mongoid/threaded/lifecycle.rb">
+      <file leaf-file-name="articles_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="param.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/param.rb">
+      <file leaf-file-name="pictures_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/pictures_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="instrumentation.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_controller/metal/instrumentation.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="instrumenter.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/activesupport-5.1.4/lib/active_support/notifications/instrumenter.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rescue.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_controller/metal/rescue.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strong_parameters.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_controller/metal/strong_parameters.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="331" column="0" lean-forward="false" selection-start-line="331" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
+            <state relative-caret-position="189">
+              <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -153,9 +171,18 @@
       <find>get_im</find>
       <find>bson</find>
       <find>@ui</find>
-      <find>end_form</find>
-      <find>get_image</find>
       <find>sorry</find>
+      <find>bind</find>
+      <find>doc</find>
+      <find>save</find>
+      <find>create</find>
+      <find>end_form</find>
+      <find>doc.save</find>
+      <find>def document</find>
+      <find>user</find>
+      <find>user_id</find>
+      <find>get_image</find>
+      <find>def doc</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -169,15 +196,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/../../gem/mindapp2/lib/mindapp2/helpers.rb" />
-        <option value="$PROJECT_DIR$/../../gem/mindapp2/lib/generators/mindapp/templates/app/controllers/mindapp_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pictures/upload/select_document.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pictures/upload/select_image.md" />
         <option value="$PROJECT_DIR$/app/views/pictures/upload/select_image.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/mindapp_controller-test.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/pictures_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/mindapp/run_form.haml" />
+        <option value="$PROJECT_DIR$/../../gem/mindapp2/lib/generators/mindapp/templates/app/controllers/mindapp_controller.rb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/views/articles/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/articles/my.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/articles.scss" />
+        <option value="$PROJECT_DIR$/app/views/pictures/upload/select_picture.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/docs/index.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/pictures_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/mindapp_controller.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/mime_types.rb" />
       </list>
     </option>
   </component>
@@ -195,10 +229,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="341" />
-    <option name="y" value="-1034" />
-    <option name="width" value="1131" />
-    <option name="height" value="659" />
+    <option name="x" value="481" />
+    <option name="y" value="-1056" />
+    <option name="width" value="1008" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -218,7 +252,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,21 +270,91 @@
               <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
               <item name="m242514" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
               <item name="m242514" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
+              <item name="m242514" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="initializers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="mindapp2 (v[path]) [path][gem]" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="mindapp2 (v[path]) [path][gem]" type="70bed36:NamedLibraryElementNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="mindapp2 (v[path]) [path][gem]" type="70bed36:NamedLibraryElementNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="generators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="mindapp2 (v[path]) [path][gem]" type="70bed36:NamedLibraryElementNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="generators" type="462c0819:PsiDirectoryNode" />
               <item name="mindapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="mindapp2 (v[path]) [path][gem]" type="70bed36:NamedLibraryElementNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="generators" type="462c0819:PsiDirectoryNode" />
+              <item name="mindapp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="mindapp2 (v[path]) [path][gem]" type="70bed36:NamedLibraryElementNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="generators" type="462c0819:PsiDirectoryNode" />
+              <item name="mindapp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="mindapp2 (v[path]) [path][gem]" type="70bed36:NamedLibraryElementNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="generators" type="462c0819:PsiDirectoryNode" />
+              <item name="mindapp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="mindapp2 (v[path]) [path][gem]" type="70bed36:NamedLibraryElementNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="mindapp2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -399,12 +504,16 @@
       <workItem from="1508772343584" duration="4019000" />
       <workItem from="1508788049308" duration="1248000" />
       <workItem from="1508789603025" duration="3851000" />
-      <workItem from="1508795820229" duration="31746000" />
+      <workItem from="1508795820229" duration="33386000" />
+      <workItem from="1509046053446" duration="7119000" />
+      <workItem from="1509293006078" duration="2771000" />
+      <workItem from="1509299612100" duration="5271000" />
+      <workItem from="1509314764096" duration="5516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61093000" />
+    <option name="totallyTimeSpent" value="83410000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -416,20 +525,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="341" y="-1034" width="1131" height="659" extended-state="0" />
+    <frame x="481" y="-1056" width="1008" height="916" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22497705" sideWeight="0.49196786" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27225673" sideWeight="0.49196786" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328341" sideWeight="0.4931256" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6691312" sideWeight="0.19742884" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23684211" sideWeight="0.23602484" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32532346" sideWeight="0.49311295" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19038817" sideWeight="0.7906336" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23684211" sideWeight="0.76397514" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32603687" sideWeight="0.47846013" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32563257" sideWeight="0.46533" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21763085" sideWeight="0.50803214" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6691312" sideWeight="0.8025712" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4235589" sideWeight="0.7546584" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -437,6 +545,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.49678603" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -455,25 +564,25 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/../../gem/mindapp2/lib/generators/mindapp/templates/app/controllers/mindapp_controller.rb</url>
-          <line>213</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/app/controllers/pictures_controller.rb</url>
+          <line>25</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/../../gem/mindapp2/lib/generators/mindapp/templates/app/controllers/mindapp_controller.rb</url>
-          <line>67</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb</url>
+          <line>291</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/../../gem/mindapp2/lib/generators/mindapp/templates/app/controllers/mindapp_controller.rb</url>
-          <line>73</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb</url>
+          <line>376</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="37" />
+      <option name="time" value="58" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="RailsRunConfigurationType">
@@ -482,190 +591,130 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/initializers/mongoid.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/pictures/upload/select_image.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../gem/mindapp2/lib/mindapp2/helpers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/mindapp_controller-test.rb" />
+    <entry file="file://$PROJECT_DIR$/app/controllers/identities_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/ckeditor.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="1320">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="uml://Ruby/MindappController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Ruby</ID>
-          <OriginalElement>MindappController</OriginalElement>
-          <nodes>
-            <node x="1864.0" y="2152.0">ActionController::Testing::Functional</node>
-            <node x="1050.0" y="2152.0">AbstractController::Base</node>
-            <node x="832.0" y="1509.0">ActionController::Metal</node>
-            <node x="1292.0" y="2531.0">ActiveSupport::DescendantsTracker</node>
-            <node x="2420.0" y="0.0">REXML</node>
-            <node x="629.0" y="1373.0">ActionController::Base</node>
-            <node x="1510.0" y="2531.0">ActiveSupport::Configurable</node>
-            <node x="0.0" y="0.0">MindappController</node>
-            <node x="415.0" y="1281.0">ApplicationController</node>
-            <node x="2217.0" y="70.0">ActiveSupport::Autoload</node>
-            <node x="2042.0" y="0.0">ActionController</node>
-            <node x="1663.0" y="2623.0">ActiveSupport::Concern</node>
-          </nodes>
-          <notes>
-            <note x="434.5" y="-98.0">
-              <node>MindappController</node>
-              <value>This is new notes</value>
-              <edge>
-                <point x="0.0" y="0.0" />
-                <point x="297.0" y="620.5" />
-                <point x="0.0" y="0.0" />
-              </edge>
-            </note>
-          </notes>
-          <edges>
-            <edge source="ActionController" target="ActiveSupport::Autoload">
-              <point x="0.0" y="0.0" />
-              <point x="2296.0" y="15.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="AbstractController::Base" target="ActiveSupport::Configurable">
-              <point x="0.0" y="0.0" />
-              <point x="1566.5" y="2321.5" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="ActionController::Metal" target="AbstractController::Base">
-              <point x="0.0" y="0.0" />
-              <point x="1151.0" y="1810.5" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="MindappController" target="ApplicationController">
-              <point x="0.0" y="0.0" />
-              <point x="502.0" y="620.5" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="AbstractController::Base" target="ActiveSupport::DescendantsTracker">
-              <point x="0.0" y="0.0" />
-              <point x="1381.0" y="2321.5" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="ApplicationController" target="ActionController::Base">
-              <point x="0.0" y="0.0" />
-              <point x="710.5" y="1307.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="ActiveSupport::Configurable" target="ActiveSupport::Concern">
-              <point x="0.0" y="0.0" />
-              <point x="1743.5" y="2557.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="ActionController::Base" target="ActionController::Metal">
-              <point x="0.0" y="0.0" />
-              <point x="921.0" y="1421.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="ActionController::Metal" target="ActionController::Testing::Functional">
-              <point x="0.0" y="0.0" />
-              <point x="1930.5" y="1810.5" />
-              <point x="0.0" y="0.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-117.0" y="265.0" />
-          <SelectedNodes>
-            <node>MindappController</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/i18n-0.9.0/lib/i18n.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/mindapp/xmain.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/bundler/gems/mongoid-51f063f6d35c/lib/mongoid/persistable/updatable.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/mindapp/run_form.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="222">
+          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_controller/metal/basic_implicit_render.rb">
+    <entry file="file://$PROJECT_DIR$/../../gem/mindapp2/lib/generators/mindapp/install_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="-283">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../gem/mindapp2/lib/generators/mindapp/templates/app/controllers/mindapp_controller.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_controller/metal/rescue.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/application_controller_renderer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/mindapp.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/articles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="63" column="21" lean-forward="false" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pictures/upload/select_picture.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="72" column="14" lean-forward="false" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
-          <folding />
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/bundler/gems/mongoid-51f063f6d35c/lib/mongoid/document.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/bson-4.2.2/lib/bson/document.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/picture.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pictures/upload/select_document.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/activesupport-5.1.4/lib/active_support/callbacks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_controller/metal.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_dispatch/journey/router.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/rack-2.0.3/lib/rack/etag.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
+        <state relative-caret-position="390">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/rack-2.0.3/lib/rack/conditional_get.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -680,8 +729,55 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/rack-2.0.3/lib/rack/session/abstract/id.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
+        <state relative-caret-position="3480">
           <caret line="232" column="0" lean-forward="false" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_dispatch/middleware/cookies.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9210">
+          <caret line="614" column="0" lean-forward="false" selection-start-line="614" selection-start-column="0" selection-end-line="614" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/bundler/gems/mongoid-51f063f6d35c/lib/mongoid/persistable/savable.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_controller/metal/basic_implicit_render.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/activesupport-5.1.4/lib/active_support/callbacks.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_controller/metal/instrumentation.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/activesupport-5.1.4/lib/active_support/notifications/instrumenter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -694,107 +790,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_dispatch/middleware/callbacks.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_controller/metal.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="2835">
+          <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_dispatch/journey/router.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="765">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/better_errors-2.4.0/lib/better_errors/middleware.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/bundler/gems/mongoid-51f063f6d35c/lib/mongoid/persistable/updatable.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        <state relative-caret-position="675">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/param.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="570">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/bundler/gems/mongoid-51f063f6d35c/lib/mongoid/association/referenced/has_many/proxy.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_controller/metal/strong_parameters.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+        <state relative-caret-position="4965">
+          <caret line="331" column="0" lean-forward="false" selection-start-line="331" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mindapp/search.haml">
+    <entry file="file://$PROJECT_DIR$/../../gem/mindapp2/lib/generators/mindapp/templates/app/controllers/mindapp_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mindapp/run_output.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mindapp/_modul.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mindapp/help.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mindapp/doc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pictures/fhelp.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/activesupport-5.1.4/lib/active_support/core_ext/object/try.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="221" column="18" lean-forward="false" selection-start-line="221" selection-start-column="10" selection-end-line="221" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -807,178 +846,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/bundler/gems/mongoid-51f063f6d35c/lib/mongoid/fields.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/bundler/gems/mongoid-51f063f6d35c/lib/mongoid/persistable/creatable.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="413" column="0" lean-forward="false" selection-start-line="413" selection-start-column="0" selection-end-line="413" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/mindapp/doc.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pictures/upload/select_image.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pictures/upload/select_image.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../gem/mindapp2/lib/mindapp2/helpers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/mindapp_controller-test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1750">
-          <caret line="235" column="8" lean-forward="false" selection-start-line="235" selection-start-column="8" selection-end-line="235" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/identities_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/picture.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pictures_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="25" lean-forward="false" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/param.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_controller/metal/strong_parameters.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="331" column="0" lean-forward="false" selection-start-line="331" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_controller/metal/rescue.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_controller/metal/instrumentation.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/gems/activesupport-5.1.4/lib/active_support/notifications/instrumenter.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="151">
+          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/bundler/gems/mongoid-51f063f6d35c/lib/mongoid/threaded/lifecycle.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
+        <state relative-caret-position="380">
           <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.2/bundler/gems/mongoid-51f063f6d35c/lib/mongoid/persistable/creatable.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/mindapp/doc.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+        <state relative-caret-position="465">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mindapp/run_form.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/docs/new_doc/form_doc.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <marker date="1508890872000" expanded="true" signature="729:1157" ph="{...}" />
-            <marker date="1508890872000" expanded="true" signature="897:1151" ph="{...}" />
-            <marker date="1508890872000" expanded="true" signature="1050:1145" ph="{...}" />
-            <marker date="1508890872000" expanded="true" signature="1205:1263" ph="{...}" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/docs/show.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/docs/my.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/docs/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="71" lean-forward="false" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/my.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/upload/select_picture.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/article.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/new_article/form_article.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pictures_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/mime_types.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2840">
-          <caret line="285" column="29" lean-forward="false" selection-start-line="285" selection-start-column="13" selection-end-line="285" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/mindapp/xmain.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="309">
+          <caret line="384" column="37" lean-forward="false" selection-start-line="384" selection-start-column="37" selection-end-line="384" selection-end-column="37" />
           <folding />
         </state>
       </provider>

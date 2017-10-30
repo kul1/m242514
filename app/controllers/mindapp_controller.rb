@@ -246,8 +246,8 @@ class MindappController < ApplicationController
       elsif params[k]['filename'].respond_to? :original_filename
         eval "@xvars[@runseq.code][k] = v"
         params[k].each { |k1,v1|
-                   next unless v1.respond_to?(:original_filename)
-                   get_image1(k, k1, params[k][k1])
+          next unless v1.respond_to?(:original_filename)
+          get_image1(k, k1, params[k][k1])
         }
 
       else
@@ -297,6 +297,7 @@ class MindappController < ApplicationController
         :content_type => params.content_type || 'application/zip',
         :data_text=> '',
         :ma_display=>true,
+        :user_id=>current_ma_user.try(:id),
         :ma_secured => @xmain.service.ma_secured )
     if defined?(IMAGE_LOCATION)
       filename = "#{IMAGE_LOCATION}/f#{Param.gen(:asset_id)}"

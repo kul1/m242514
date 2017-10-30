@@ -19,12 +19,9 @@ class PicturesController < ApplicationController
   end
 
   def create
-    @picture = Picture.new(
-        title: $xvars["form_picture"]["title"],
-        text: $xvars["form_picture"]["text"],
-        keywords: $xvars["form_picture"]["keywords"],
-        body: $xvars["form_picture"]["body"],
-
+    @picture = Picture.new.(
+        filename: $xvars["select_picture"]["filename"],
+        description: $xvars["select_picture"]["description"],
         user_id: $xvars["user_id"])
     @picture.save!
   end
@@ -63,7 +60,5 @@ class PicturesController < ApplicationController
   def load_comments
     @comments = @picture.comments.find_all
   end
-
-  params.permit(:picture)
 
 end

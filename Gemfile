@@ -63,6 +63,7 @@ gem 'bson', '~> 4.0'
 gem 'mongoid', github: 'mongodb/mongoid'
 gem 'nokogiri'
 gem 'haml', git: 'https://github.com/haml/haml'
+gem 'haml-rails'
 gem 'mail'
 gem 'prawn'
 gem 'redcarpet'
@@ -86,3 +87,11 @@ gem 'maruku', '~> 0.7.3'
 
 gem 'mindapp2', :path => '/Users/kul/mindapp2/gem/mindapp2'
 #gem 'mongoid-paperclip'
+
+
+
+group :development, :test do
+end
+
+group :development, :test do
+end
