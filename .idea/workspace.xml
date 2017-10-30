@@ -6,14 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706a5253-6ed1-425b-acf6-ea68dba73bc1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/pictures_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/picture.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pictures/fhelp.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pictures/print_document/print_document.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pictures/select_picture.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pictures/upload/select_document.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pictures/upload/select_image.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pictures/upload/select_picture.html.erb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mindapp_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/mindapp_controller.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -28,18 +21,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/m242514@Development__m242514.coverage" NAME="Development: m242514 Coverage Results" MODIFIED="1509331683388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="m242514" />
+    <SUITE FILE_PATH="coverage/m242514@Development__m242514.coverage" NAME="Development: m242514 Coverage Results" MODIFIED="1509331970629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="m242514" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="m242514" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mindapp_controller.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mindapp_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="306" column="119" lean-forward="false" selection-start-line="306" selection-start-column="119" selection-end-line="306" selection-end-column="119" />
+            <state relative-caret-position="166">
+              <caret line="306" column="104" lean-forward="false" selection-start-line="306" selection-start-column="104" selection-end-line="306" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -75,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my.haml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="my.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/docs/my.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -193,10 +186,10 @@
         <option value="$PROJECT_DIR$/app/controllers/pictures_controller.rb" />
         <option value="$PROJECT_DIR$/config/initializers/mime_types.rb" />
         <option value="$PROJECT_DIR$/app/controllers/docs_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/mindapp_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/docs/new_doc/form_doc.html.erb" />
         <option value="$PROJECT_DIR$/app/views/docs/index.haml" />
         <option value="$PROJECT_DIR$/app/views/docs/my.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/mindapp_controller.rb" />
       </list>
     </option>
   </component>
@@ -250,6 +243,12 @@
               <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
               <item name="m242514" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
+              <item name="m242514" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
@@ -502,12 +501,12 @@
       <workItem from="1509046053446" duration="7119000" />
       <workItem from="1509293006078" duration="2771000" />
       <workItem from="1509299612100" duration="5271000" />
-      <workItem from="1509314764096" duration="9489000" />
+      <workItem from="1509314764096" duration="9669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87383000" />
+    <option name="totallyTimeSpent" value="87563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -521,12 +520,12 @@
   <component name="ToolWindowManager">
     <frame x="481" y="-1056" width="1008" height="916" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27225673" sideWeight="0.49196786" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27225673" sideWeight="0.49196786" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328341" sideWeight="0.4931256" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23684211" sideWeight="0.24223602" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32532346" sideWeight="0.49311295" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23684211" sideWeight="0.757764" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23684211" sideWeight="0.757764" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32563257" sideWeight="0.46533" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21763085" sideWeight="0.50803214" order="2" side_tool="true" content_ui="tabs" />
@@ -565,11 +564,6 @@
           <url>file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb</url>
           <line>376</line>
           <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb</url>
-          <line>306</line>
-          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -942,14 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="306" column="119" lean-forward="false" selection-start-line="306" selection-start-column="119" selection-end-line="306" selection-end-column="119" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/docs/new_doc/form_doc.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -970,6 +956,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="306" column="104" lean-forward="false" selection-start-line="306" selection-start-column="104" selection-end-line="306" selection-end-column="104" />
           <folding />
         </state>
       </provider>
