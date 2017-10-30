@@ -1,5 +1,5 @@
 <%
-  doc = Mindapp::Doc.new 
+  doc = @doc
 %>
 <%= fields_for doc do |f| %>
   <%= f.label :filename, "File Name" %>

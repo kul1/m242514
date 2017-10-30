@@ -3,6 +3,7 @@ class DocsController < ApplicationController
 
 	def index
     @docs = Mindapp::Doc.desc(:created_at).page(params[:page]).per(10)
+
 	end
 
   def show 

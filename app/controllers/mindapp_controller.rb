@@ -304,7 +304,7 @@ class MindappController < ApplicationController
       File.open(filename,"wb") { |f| f.write(params.read) }
       # File.open(filename,"wb") { |f| f.puts(params.read) }
       eval "@xvars[@runseq.code][key] = '#{url_for(:action=>'document', :id=>doc.id, :only_path => true )}' "
-      doc.update_attributes :url => filename, :basename => File.basename(filename), :cloudinary => false
+      doc.update_attributes :url => filename, :basename => File.basename(filename), :cloudinary => false, :data_text =>
     else
       result = Cloudinary::Uploader.upload(params)
       eval %Q{ @xvars[@runseq.code][key] = '#{result["url"]}' }

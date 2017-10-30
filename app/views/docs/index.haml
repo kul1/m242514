@@ -3,17 +3,13 @@
 %table{:id=>"pending-table", :width=>"100%"}
   %tr{:style=>"color:black; background-color:#97BF60;"}
     %th User
-    %th Name
     %th FileName
-    %th Created
     %th Updated
     %th Delete
   - @docs.each do |doc|
     %tr
       %td= doc.user.code if doc.user
-      %td= link_to doc.name, :controller=>"mindapp", :action=>"document", :id=>doc.id
-      %td= doc.filename
-      %td= doc.created_at
+      %td= link_to doc.filename, :controller=>"mindapp", :action=>"document", :id=>doc.id
       %td= doc.updated_at
       %td(align='center')
         - next unless login?
