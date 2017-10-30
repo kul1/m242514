@@ -1,9 +1,0 @@
-<%
-  picture = @picture
-%>
-<%= fields_for picture do |f| %>
-  <%= f.label :filename, "File Name" %>
-  <%= f.file_field :filename %>
-  <%= f.label :description, "Description" %>
-  <%= f.text_field :description %>
-<% end %>

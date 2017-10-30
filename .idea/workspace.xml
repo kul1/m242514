@@ -6,11 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706a5253-6ed1-425b-acf6-ea68dba73bc1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/docs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/docs_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mindapp_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/mindapp_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/docs/index.haml" afterPath="$PROJECT_DIR$/app/views/docs/index.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/docs/my.haml" afterPath="$PROJECT_DIR$/app/views/docs/my.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/docs/new_doc/form_doc.html.erb" afterPath="$PROJECT_DIR$/app/views/docs/new_doc/form_doc.html.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/pictures_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/picture.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pictures/fhelp.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pictures/print_document/print_document.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pictures/select_picture.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pictures/upload/select_document.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pictures/upload/select_image.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pictures/upload/select_picture.html.erb" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -272,21 +275,6 @@
               <item name="m242514" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
-              <item name="m242514" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="new_doc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="m242514" type="b2602c69:ProjectViewProjectNode" />
-              <item name="m242514" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="sessions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -514,12 +502,12 @@
       <workItem from="1509046053446" duration="7119000" />
       <workItem from="1509293006078" duration="2771000" />
       <workItem from="1509299612100" duration="5271000" />
-      <workItem from="1509314764096" duration="9313000" />
+      <workItem from="1509314764096" duration="9489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87207000" />
+    <option name="totallyTimeSpent" value="87383000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -532,9 +520,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="481" y="-1056" width="1008" height="916" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27225673" sideWeight="0.49196786" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27225673" sideWeight="0.49196786" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328341" sideWeight="0.4931256" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23684211" sideWeight="0.24223602" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -568,11 +555,6 @@
           <url>file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb</url>
           <line>66</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/pictures_controller.rb</url>
-          <line>25</line>
-          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb</url>
