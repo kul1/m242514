@@ -39,7 +39,7 @@ class MindappController < ApplicationController
   def init
     module_code, code = params[:s].split(":")
     @service= Mindapp::Service.where(:module_code=> module_code, :code=> code).first
-    # @service= Mindapp::Service.where(:module_code=> params[:module], :code=> params[:service]).first
+    #@service= Mindapp::Service.where(:module_code=> params[:module], :code=> params[:service]).first
     if @service && authorize_init?
       xmain = create_xmain(@service)
       result = create_runseq(xmain)
@@ -51,6 +51,7 @@ class MindappController < ApplicationController
       end
       xmain.update_attribute(:xvars, @xvars)
       xmain.runseqs.last.update_attribute(:end,true)
+
       #Above line cause error update_attribute in heroku shown in logs and it was proposed to fixed in github:'kul1/g241502'
       redirect_to :action=>'run', :id=>xmain.id
     else
@@ -475,7 +476,8 @@ class MindappController < ApplicationController
                                      :name=> name, :action=> action,
                                      :code=> code, :role=>role.upcase, :rule=> rule,
                                      :rstep=> i, :form_step=> j, :status=>'I',
-                                     :xml=>activity.to_s
+                                     :xml=>activity.to_s,
+                                     :end=>false
       xmain.current_runseq= runseq.id if i==1
     end
     @xvars['total_steps']= i
