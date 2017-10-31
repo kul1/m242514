@@ -50,6 +50,7 @@ class MindappController < ApplicationController
         redirect_to "pending" and return
       end
       xmain.update_attribute(:xvars, @xvars)
+      xmain.save # Before update to work
       xmain.runseqs.last.update_attribute(:end,true)
 
       #Above line cause error update_attribute in heroku shown in logs and it was proposed to fixed in github:'kul1/g241502'
@@ -476,8 +477,7 @@ class MindappController < ApplicationController
                                      :name=> name, :action=> action,
                                      :code=> code, :role=>role.upcase, :rule=> rule,
                                      :rstep=> i, :form_step=> j, :status=>'I',
-                                     :xml=>activity.to_s,
-                                     :end=>false
+                                     :xml=>activity.to_s
       xmain.current_runseq= runseq.id if i==1
     end
     @xvars['total_steps']= i
