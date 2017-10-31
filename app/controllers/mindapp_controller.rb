@@ -477,7 +477,8 @@ class MindappController < ApplicationController
                                      :name=> name, :action=> action,
                                      :code=> code, :role=>role.upcase, :rule=> rule,
                                      :rstep=> i, :form_step=> j, :status=>'I',
-                                     :xml=>activity.to_s
+                                     :xml=>activity.to_s,
+                                     :end=>false
       xmain.current_runseq= runseq.id if i==1
     end
     @xvars['total_steps']= i
