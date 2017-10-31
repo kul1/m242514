@@ -2,11 +2,24 @@ class DocsController < ApplicationController
   before_action :load_doc, only: [:show, :destroy]
 
 	def index
-    @docs = Mindapp::Doc.desc(:created_at).page(params[:page]).per(10)
+    @docs = Mindapp::Doc.where(name: 'filename').desc(:created_at).page(params[:page]).per(10)
 
 	end
 
   def show 
+
+    doc = Mindapp::Doc.find params[:id]
+    if doc.cloudinary
+      require 'net/http'
+      require "uri"
+      uri = URI.parse(doc.url)
+      data = Net::HTTP.get_response(uri)
+      send_data(data.body, :filename=>doc.filename, :type=>doc.content_type, :disposition=>"inline")
+    else
+      data= read_binary(doc.url)
+      send_data(data, :filename=>doc.filename, :type=>doc.content_type, :disposition=>"inline")
+    end
+  
     
   end
 
@@ -24,7 +37,7 @@ class DocsController < ApplicationController
   end
 
   def my
-    @docs = Mindapp::Doc.where(user_id: current_ma_user).desc(:created_at).page(params[:page]).per(10)
+    @docs = Mindapp::Doc.where(user_id: current_ma_user, name: 'filename').desc(:created_at).page(params[:page]).per(10)
     @page_title       = 'Document List'
   end
 
