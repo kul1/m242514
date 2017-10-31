@@ -21,7 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/m242514@Development__m242514.coverage" NAME="Development: m242514 Coverage Results" MODIFIED="1509491382198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="m242514" />
+    <SUITE FILE_PATH="coverage/m242514@Development__m242514.coverage" NAME="Development: m242514 Coverage Results" MODIFIED="1509493767577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="m242514" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="m242514" />
@@ -31,8 +31,8 @@
       <file leaf-file-name="mindapp_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6548">
-              <caret line="479" column="57" lean-forward="true" selection-start-line="479" selection-start-column="57" selection-end-line="479" selection-end-column="57" />
+            <state relative-caret-position="296">
+              <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -140,6 +140,7 @@
       <find>name</find>
       <find>runseq</find>
       <find>:end</find>
+      <find>create_runseq</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -446,12 +447,12 @@
       <workItem from="1509293006078" duration="2771000" />
       <workItem from="1509299612100" duration="5271000" />
       <workItem from="1509314764096" duration="10270000" />
-      <workItem from="1509472730932" duration="6488000" />
+      <workItem from="1509472730932" duration="8398000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94652000" />
+    <option name="totallyTimeSpent" value="96562000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -471,7 +472,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23684211" sideWeight="0.27329192" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32532346" sideWeight="0.49311295" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23684211" sideWeight="0.72670805" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23684211" sideWeight="0.72670805" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32456142" sideWeight="0.46169773" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21763085" sideWeight="0.50803214" order="2" side_tool="true" content_ui="tabs" />
@@ -498,17 +499,17 @@
       <breakpoints>
         <line-breakpoint type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb</url>
-          <line>68</line>
+          <line>69</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb</url>
-          <line>293</line>
+          <line>294</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb</url>
-          <line>379</line>
+          <line>380</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
@@ -518,7 +519,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb</url>
-          <line>53</line>
+          <line>54</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
@@ -884,8 +885,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mindapp_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6548">
-          <caret line="479" column="57" lean-forward="true" selection-start-line="479" selection-start-column="57" selection-end-line="479" selection-end-column="57" />
+        <state relative-caret-position="296">
+          <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
           <folding />
         </state>
       </provider>

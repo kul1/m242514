@@ -50,8 +50,9 @@ class MindappController < ApplicationController
         redirect_to "pending" and return
       end
       xmain.update_attribute(:xvars, @xvars)
-      xmain.save # Before update to work
-      xmain.runseqs.last.update_attribute(:end,true)
+      lastrunseqs = xmain.runseqs.last
+      lastrunseqs.update_attribute(:end, true)
+      #xmain.runseqs.last.update_attribute(:end, true)
 
       #Above line cause error update_attribute in heroku shown in logs and it was proposed to fixed in github:'kul1/g241502'
       redirect_to :action=>'run', :id=>xmain.id
