@@ -30,6 +30,9 @@ class DocsController < ApplicationController
   end
 
   def create
+    puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+    puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+
     @doc = Mindapp::Doc.new(
                       filename: $xvars["form_doc"]["filename"],
                       user_id: $xvars["user_id"])
