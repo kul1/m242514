@@ -43,6 +43,10 @@ class MindappController < ApplicationController
     if @service && authorize_init?
       xmain = create_xmain(@service)
       result = create_runseq(xmain)
+      puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+      puts result
+      puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+
       unless result
         message = "cannot find action for xmain #{xmain.id}"
         ma_log(message)
