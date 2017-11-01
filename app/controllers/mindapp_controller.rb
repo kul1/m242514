@@ -50,6 +50,7 @@ class MindappController < ApplicationController
         redirect_to "pending" and return
       end
       xmain.update_attribute(:xvars, @xvars)
+      xmain.save
       lastrunseqs = xmain.runseqs.last
       lastrunseqs.update_attribute(:end, true)
       #xmain.runseqs.last.update_attribute(:end, true)
