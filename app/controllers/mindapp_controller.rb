@@ -51,9 +51,10 @@ class MindappController < ApplicationController
       end
       xmain.update_attribute(:xvars, @xvars)
       xmain.save
-      lastrunseqs = xmain.runseqs.last
-      lastrunseqs.update_attribute(:end, true)
       #xmain.runseqs.last.update_attribute(:end, true)
+      xmainlast = xmain.runseqs.last
+      xmainlast.update_attribute(:end,true)
+
 
       #Above line cause error update_attribute in heroku shown in logs and it was proposed to fixed in github:'kul1/g241502'
       redirect_to :action=>'run', :id=>xmain.id
