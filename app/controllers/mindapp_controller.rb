@@ -55,9 +55,7 @@ class MindappController < ApplicationController
       end
       xmain.update_attribute(:xvars, @xvars)
       xmain.save
-      #xmain.runseqs.last.update_attribute(:end, true)
-      xmainlast = xmain.runseqs.last
-      xmainlast.update_attribute(:end,true)
+      xmain.runseqs.last.update_attribute(:end, true)
 
 
       #Above line cause error update_attribute in heroku shown in logs and it was proposed to fixed in github:'kul1/g241502'
@@ -373,7 +371,7 @@ class MindappController < ApplicationController
       }
     end
   end
-  # handle uploaded image
+  #handle uploaded image
   def document
     doc = Mindapp::Doc.find params[:id]
     if doc.cloudinary
@@ -387,6 +385,7 @@ class MindappController < ApplicationController
       send_data(data, :filename=>doc.filename, :type=>doc.content_type, :disposition=>"inline")
     end
   end
+
   def status
     @xmain= Mindapp::Xmain.where(:xid=>params[:xid]).first
     @title= "Task number #{params[:xid]} #{@xmain.name}"
