@@ -7,7 +7,9 @@ DEFAULT_KEYWORDS = %w[Mindapp2 Rails ruby Generator]
 GMAP = false
 ADSENSE = true
 NEXT = "Next >"
+PER_PAGE = 25
+
 # comment IMAGE_LOCATION to use cloudinary (specify params in config/cloudinary.yml)
 IMAGE_LOCATION = "upload"
 # for debugging
-# DONT_SEND_MAIL = true
+DONT_SEND_MAIL = false

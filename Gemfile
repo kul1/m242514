@@ -75,6 +75,10 @@ gem 'cloudinary'
 gem 'kaminari'
 gem 'kaminari-mongoid'
 gem 'jquery-rails'
+gem 'formtastic', '~> 3.0'
+gem 'will_paginate', '~> 3.1.0'
+
+
 group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
@@ -90,7 +94,10 @@ gem 'maruku', '~> 0.7.3'
 
 
 group :development, :test do
-#  gem 'mindapp2', :path => '/Users/kul/mindapp2/gem/mindapp2'
+  gem 'mindapp2', :path => '/Users/kul/mindapp2/gem/mindapp2'
 end
 
-gem 'mindapp2', github: 'kul1/mindapp2', branch: 'v0.1.1.6'
+#gem 'mindapp2', github: 'kul1/mindapp2', branch: 'v0.1.1.6'
+
+group :development, :test do
+end

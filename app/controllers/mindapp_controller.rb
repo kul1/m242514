@@ -39,14 +39,10 @@ class MindappController < ApplicationController
   def init
     module_code, code = params[:s].split(":")
     @service= Mindapp::Service.where(:module_code=> module_code, :code=> code).first
-    #@service= Mindapp::Service.where(:module_code=> params[:module], :code=> params[:service]).first
+    # @service= Mindapp::Service.where(:module_code=> params[:module], :code=> params[:service]).first
     if @service && authorize_init?
       xmain = create_xmain(@service)
       result = create_runseq(xmain)
-      puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-      puts result
-      puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-
       unless result
         message = "cannot find action for xmain #{xmain.id}"
         ma_log(message)
@@ -54,10 +50,7 @@ class MindappController < ApplicationController
         redirect_to "pending" and return
       end
       xmain.update_attribute(:xvars, @xvars)
-      xmain.save
-      xmain.runseqs.last.update_attribute(:end, true)
-
-
+      xmain.runseqs.last.update_attribute(:end,true)
       #Above line cause error update_attribute in heroku shown in logs and it was proposed to fixed in github:'kul1/g241502'
       redirect_to :action=>'run', :id=>xmain.id
     else
@@ -158,6 +151,38 @@ class MindappController < ApplicationController
     @runseq.save
     refresh_to "/", :alert => "Sorry opeation error at  #{@xmain.id} #{@xvars['error']}"
   end
+
+  def run_list
+    init_vars(params[:id])
+    service= @xmain.service
+    disp= get_option("ma_display")
+
+    ma_display = (disp && !affirm(disp)) ? false : true
+    if service
+      @m = "@#{service.module.code}"
+      ## search in article not work!
+      #@n="#{service.module.code}".upcase_first.singularize.constantize.msearch(@qq)
+      @o="#{service.module.code}".upcase_first.singularize.constantize.all.order("created_at DESC")
+      if @q
+        ##"@articles = Article.search(params[:search].downcase, params[:page], PER_PAGE)"
+        #@m = @o
+        @m = @n
+      else
+        @m = @o
+      end
+      fhelp= "app/views/#{service.module.code}/#{service.code}/#{@runseq.code}.md"
+      @help = File.read(fhelp) if File.exists?(fhelp)
+      f= "app/views/#{service.module.code}/#{service.code}/#{@runseq.code}.html.erb"
+      @ui= File.read(f)
+      @message = defined?(MSG_NEXT) ? MSG_NEXT : "Next &gt;"
+      @message = "Finish" if @runseq.end
+    else
+      # flash[:notice]= "Error: Can not find the view file for this controller"
+      ma_log "Error: Can not find the view file for this controller"
+      redirect_to_root
+    end
+  end
+
   def run_output
     init_vars(params[:id])
     service= @xmain.service
@@ -166,22 +191,10 @@ class MindappController < ApplicationController
     if service
       f= "app/views/#{service.module.code}/#{service.code}/#{@runseq.code}.html.erb"
       @ui= File.read(f)
-      if Mindapp::Doc.where(:runseq_id=>@runseq.id).exists?
-        @doc= Mindapp::Doc.where(:runseq_id=>@runseq.id).first
-        @doc.update_attributes :data_text=> render_to_string(:inline=>@ui, :layout=>"utf8"),
-                               :xmain=>@xmain, :runseq=>@runseq, :user=>current_ma_user,
-                               :ip=> get_ip, :service=>service, :ma_display=>ma_display,
-                               :ma_secured => @xmain.service.ma_secured
-      else
-        @doc= Mindapp::Doc.create :name=> @runseq.name,
-                                  :content_type=>"output", :data_text=> render_to_string(:inline=>@ui, :layout=>"utf8"),
-                                  :xmain=>@xmain, :runseq=>@runseq, :user=>current_ma_user,
-                                  :ip=> get_ip, :service=>service, :ma_display=>ma_display,
-                                  :ma_secured => @xmain.service.ma_secured
-      end
-      @message = defined?(MSG_NEXT) ? MSG_NEXT : "Next &gt;"
-      @message = "Finish" if @runseq.end
-      eval "@xvars[@runseq.code] = url_for(:controller=>'Mindapp', :action=>'document', :id=>@doc.id)"
+
+       @message = defined?(MSG_NEXT) ? MSG_NEXT : "Next &gt;"
+       @message = "Finish" if @runseq.end
+      # eval "@xvars[@runseq.code] = url_for(:controller=>'Mindapp', :action=>'document', :id=>@doc.id)"
     else
       # flash[:notice]= "Error: Can not find the view file for this controller"
       ma_log "Error: Can not find the view file for this controller"
@@ -191,7 +204,10 @@ class MindappController < ApplicationController
     unless ma_display
       end_action
     end
+    init_vars(params[:xmain_id])
+    eval "@xvars[@runseq.code] = {} unless @xvars[@runseq.code]"
   end
+
   def run_mail
     init_vars(params[:id])
     service= @xmain.service
@@ -217,6 +233,10 @@ class MindappController < ApplicationController
     end_action
   end
 
+  def end_list
+    init_vars(params[:xmain_id])
+    end_action
+  end
   ####################################################
   # search for original_filename if attached         #
   ####################################################
@@ -304,14 +324,12 @@ class MindappController < ApplicationController
         :content_type => params.content_type || 'application/zip',
         :data_text=> '',
         :ma_display=>true,
-        :user_id=>current_ma_user.try(:id),
         :ma_secured => @xmain.service.ma_secured )
     if defined?(IMAGE_LOCATION)
       filename = "#{IMAGE_LOCATION}/f#{Param.gen(:asset_id)}"
       File.open(filename,"wb") { |f| f.write(params.read) }
       # File.open(filename,"wb") { |f| f.puts(params.read) }
       eval "@xvars[@runseq.code][key] = '#{url_for(:action=>'document', :id=>doc.id, :only_path => true )}' "
-      puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
       doc.update_attributes :url => filename, :basename => File.basename(filename), :cloudinary => false
     else
       result = Cloudinary::Uploader.upload(params)
@@ -371,7 +389,7 @@ class MindappController < ApplicationController
       }
     end
   end
-  #handle uploaded image
+  # handle uploaded image
   def document
     doc = Mindapp::Doc.find params[:id]
     if doc.cloudinary
@@ -385,7 +403,6 @@ class MindappController < ApplicationController
       send_data(data, :filename=>doc.filename, :type=>doc.content_type, :disposition=>"inline")
     end
   end
-
   def status
     @xmain= Mindapp::Xmain.where(:xid=>params[:xid]).first
     @title= "Task number #{params[:xid]} #{@xmain.name}"
@@ -411,6 +428,45 @@ class MindappController < ApplicationController
       do_search
     end
   end
+  ###############################################################
+  # run_search Prepare @ui= File.read(f)
+  # usage: in view run_search
+  ###############################################################
+
+  def run_search
+
+    init_vars(params[:id])
+    if authorize?
+      if ['F', 'X'].include? @xmain.status
+        redirect_to_root
+      else
+        service= @xmain.service
+        if service
+          # Article
+          modelstring = "#{@xmain.service.module.code}"
+          @modelclass = modelstring.upcase_first.singularize
+          @modelclassall = @modelclass.constantize.all
+
+          #@docs = Article.search_ma_secured(@q.downcase, params[:page], PER_PAGE)
+
+          @modelsearch = "#{service.module.code}".upcase_first.singularize
+          @articles = Article.all
+          @title= "Transaction ID #{@xmain.xid}: #{@xmain.name} / #{@runseq.name}"
+          fhelp= "app/views/#{service.module.code}/#{service.code}/#{@runseq.code}.md"
+          @help = File.read(fhelp) if File.exists?(fhelp)
+          f= "app/views/#{service.module.code}/#{service.code}/#{@runseq.code}.html.erb"
+          @ui= File.read(f)
+        else
+          # flash[:notice]= "Error: Can not find the view file for this controller"
+          ma_log "Error: Can not find the view file for this controller"
+          redirect_to_root
+        end
+      end
+    else
+      redirect_to_root
+    end
+  end
+
   def err404
     # ma_log 'ERROR', 'main/err404'
     flash[:notice] = "We're sorry, but something went wrong. We've been notified about this issue and we'll take a look at it shortly."
@@ -483,8 +539,7 @@ class MindappController < ApplicationController
                                      :name=> name, :action=> action,
                                      :code=> code, :role=>role.upcase, :rule=> rule,
                                      :rstep=> i, :form_step=> j, :status=>'I',
-                                     :xml=>activity.to_s,
-                                     :end=>false
+                                     :xml=>activity.to_s
       xmain.current_runseq= runseq.id if i==1
     end
     @xvars['total_steps']= i
@@ -542,6 +597,17 @@ class MindappController < ApplicationController
     @xmains = GmaXmain.find(@docs.map(&:ma_xmain_id)).sort { |a,b| b.id<=>a.id }
     # @xmains = GmaXmain.find @docs.map(&:created_at).sort { |a,b| b<=>a }
   end
+
+  def do_search_a
+    if current_ma_user.ma_secured?
+      @docs = Article.search_ma_secured(@q.downcase, params[:page], PER_PAGE)
+    else
+      @docs = Article.search(@q.downcase, params[:page], PER_PAGE)
+    end
+    @xmains = GmaXmain.find(@docs.map(&:ma_xmain_id)).sort { |a,b| b.id<=>a.id }
+    # @xmains = GmaXmain.find @docs.map(&:created_at).sort { |a,b| b<=>a }
+  end
+
   def read_binary(path)
     File.open path, "rb" do |f| f.read end
   end

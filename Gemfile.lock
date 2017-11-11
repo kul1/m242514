@@ -8,18 +8,11 @@ GIT
 
 GIT
   remote: https://github.com/haml/haml
-  revision: 2ca409609e497d9b9ac2196a0f9dd6c4ead15945
+  revision: 1d446b33207ae148f203ca1e5b68dd2428750962
   specs:
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
-
-GIT
-  remote: https://github.com/kul1/mindapp2.git
-  revision: fe419d8b77fae3aaada622a99f7861f398f088c6
-  branch: v0.1.1.6
-  specs:
-    mindapp2 (0.1.1.6.pre.alpha)
 
 GIT
   remote: https://github.com/mongodb/mongoid.git
@@ -28,6 +21,11 @@ GIT
     mongoid (7.0.0.beta)
       activemodel (~> 5.1)
       mongo (>= 2.4.1, < 3.0.0)
+
+PATH
+  remote: /Users/kul/mindapp2/gem/mindapp2
+  specs:
+    mindapp2 (0.1.1.6.pre.alpha)
 
 GEM
   remote: https://rubygems.org/
@@ -125,6 +123,8 @@ GEM
     ffi (1.9.18)
     font-awesome-rails (4.7.0.2)
       railties (>= 3.2, < 5.2)
+    formtastic (3.1.5)
+      actionpack (>= 3.2.13)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     haml-rails (1.0.0)
@@ -141,7 +141,7 @@ GEM
       ruby_parser (~> 3.5)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    i18n (0.9.0)
+    i18n (0.9.1)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -176,8 +176,8 @@ GEM
     loofah (2.1.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.6.6)
-      mime-types (>= 1.16, < 4)
+    mail (2.7.0)
+      mini_mime (>= 0.1.1)
     maruku (0.7.3)
     meta-tags (2.6.0)
       actionpack (>= 3.2.0, < 5.3)
@@ -186,7 +186,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mimemagic (0.3.2)
-    mini_mime (0.1.4)
+    mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
     mongo (2.4.3)
@@ -236,7 +236,7 @@ GEM
     pry-byebug (3.5.0)
       byebug (~> 9.1)
       pry (~> 0.10)
-    public_suffix (3.0.0)
+    public_suffix (3.0.1)
     puma (3.10.0)
     rack (2.0.3)
     rack-test (0.7.0)
@@ -299,7 +299,7 @@ GEM
     ruby_parser (3.10.1)
       sexp_processor (~> 4.9)
     rubyzip (1.2.1)
-    sass (3.5.2)
+    sass (3.5.3)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -310,7 +310,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    selenium-webdriver (3.6.0)
+    selenium-webdriver (3.7.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
     sexp_processor (4.10.0)
@@ -334,7 +334,7 @@ GEM
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.3)
-    tzinfo (1.2.3)
+    tzinfo (1.2.4)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
@@ -349,6 +349,7 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    will_paginate (3.1.6)
     xpath (2.1.0)
       nokogiri (~> 1.3)
 
@@ -367,6 +368,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   dotenv-rails
   font-awesome-rails
+  formtastic (~> 3.0)
   haml!
   haml-rails
   jbuilder (~> 2.5)
@@ -402,6 +404,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  will_paginate (~> 3.1.0)
 
 RUBY VERSION
    ruby 2.4.2p198

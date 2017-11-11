@@ -10,7 +10,7 @@
     %th Edit  
   - @docs.each do |doc|
     %tr
-      %td= link_to doc.filename, :controller=>"docs", :action=>"show", :id=>doc.id
+      %td= link_to_blank align_text(doc.filename), :controller=>"mindapp", :action=>:document, :id=>doc.id
       %td= doc.updated_at.strftime('%m/%d/%Y')
       %td(align='center')= link_to image_tag('delete.png', style:'border:none; float:none;'), "#", :onclick=>"if (confirm('Please Confirm')) {location.hash='/docs/destroy/#{doc.id}';}"
       %td(align='center')= link_to image_tag('pencil.png', style:'border:none; float:none;'), {controller: "mindapp", action: "init", s: 'docs:xedit_doc', doc_id: doc.id}, data: { confirm: "Please Confirm" }

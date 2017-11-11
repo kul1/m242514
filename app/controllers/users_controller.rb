@@ -22,4 +22,6 @@ class UsersController < ApplicationController
       ma_log "Unauthorized access"
     end
   end
+
+
 end

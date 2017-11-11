@@ -1,7 +1,11 @@
 - @title= "My Articles"
 %p
 - @page_title  = 'All Articlces'
-= paginate @articles
+=# paginate @articles
+= form_tag(:controller=>"articles", :action=>"my", :method => "get", id: "search-form") do
+  = text_field_tag :search, params[:search], placeholder: "Search Posts"
+  = submit_tag "Search"
+
 %table#article-table
   %tr
     %th Title

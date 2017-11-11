@@ -1,0 +1,18 @@
+/%h3= "Search #{@q}"
+
+= will_paginate @articles, :class=>'flickr_pagination', :params=>{:q=>@q}
+/= will_paginate @xmains, :class=>'flickr_pagination', :params=>{:q=>@q}
+
+%table{:width=>"100%"}
+  %tr{:style=>"color:white; background-color:#6A6A6A; text-shadow:none;"}
+    %th id
+    %th task
+    %th starter
+    %th begin
+    %th end
+    %th status
+  - @articles.each do |f|
+    %tr
+      %td= link_to f.id, :action=>"status", :id=>f.id
+      %td= link_to f.title, :action=>"status", :id=>f.id
+

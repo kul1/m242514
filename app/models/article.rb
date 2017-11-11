@@ -11,4 +11,14 @@ class Article
   field :body, :type => String
   field :keywords, :type => String
   # mindapp end
+
+    #
+    # def self.search(search)
+    #   where('title || keywords || body LIKE ?', "%#{search}%")
+    # end
+
+  def self.search(search)
+    where("title LIKE ?", "%#{params['search']}%")
+  end
+
 end

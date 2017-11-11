@@ -1,0 +1,14 @@
+<% u = User.find_by :id=> $xvars[:select_user][:usertag]%>
+
+<table id="doc" width="100%">
+  <tr>
+    <td class="field-name">ผู้ใช้ที่ต้องการแก้ไข Password</td>
+    <td><%= u.code %></td>
+    <td style="width:50%;">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="field-name" valign='top'>รหัสผ่านใหม่</td>
+    <td valign='top'><%= text_field_tag :pwd, '', :style => "width:200px;" %></td>
+    <td style="width:50%;">&nbsp;</td>
+  </tr>
+</table>

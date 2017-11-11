@@ -1,0 +1,25 @@
+.head
+  - @title= @xmain.name
+  - next_step = 'end_list'
+  -
+  #title(style='text-align:right;')= "click '#{@runseq.name}' to print"
+  %p
+  =javascript_include_tag "disable_enter_key"
+-if 1
+  = form_tag({ :method => "get", id: "search-form", :class=>'formtastic'}) do
+    = text_field_tag :search, params[:search], placeholder: "Search Content"
+    = submit_tag "Search", :name => nil
+
+- if @help
+  %div(data-role="collapsible" data-theme="e" data-content-theme="c" data-mini="true")
+    %h3 HELP
+    %p= markdown(@help)
+= form_tag({ :action => next_step } , {:multipart => true, :onKeyPress=>'return disableEnterKey(event)', :class=>'formtastic'}) do
+  = hidden_field_tag 'xmain_id', @xmain.id
+  = hidden_field_tag 'runseq_id', @runseq.id
+  = hidden_field_tag 'step', @xvars[:current_step]
+  %div(data-role="fieldcontain")
+    = render :inline=> @ui
+  %p
+  = submit_tag @message
+%p

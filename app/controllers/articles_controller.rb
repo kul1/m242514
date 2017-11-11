@@ -29,8 +29,41 @@ class ArticlesController < ApplicationController
     @article.save!
   end
 
+  def search
+    @q = $xvars["search_article"]["title"] || $xvars["search_article"]["text"] || $xvars["search_article"]["body"] || ""
+    @title = "ผลการค้นหา #{@q}"
+    @backbtn= true
+    @cache= true
+    if @q.blank?
+      redirect_to "/"
+    else
+      #s= GmaSearch.create :q=>@q, :ip=> request.env["REMOTE_ADDR"]
+      @articles = Article.search(@q.downcase, params[:page], PER_PAGE)
+    end
+  end
+
+  def do_search_a
+
+    # if current_ma_user.ma_secured?
+    #   @docs = Article.search_ma_secured(@q.downcase, params[:page], PER_PAGE)
+    # else
+      @articles = Article.search(@q.downcase, params[:page], PER_PAGE)
+    # end
+    #@xmains = GmaXmain.find(@docs.map(&:ma_xmain_id)).sort { |a,b| b.id<=>a.id }
+    # @xmains = GmaXmain.find @docs.map(&:created_at).sort { |a,b| b<=>a }
+  end
+
+
+
+
   def my
-    @articles = Article.where(user_id: current_ma_user).desc(:created_at).page(params[:page]).per(10)
+    @articles = if params[:search]
+                  #Article.where('title LIKE ?',"%#{params[:search]}%")
+                  Article.search(params[:search])
+
+                else
+                  Article.all
+                end
     @page_title       = 'Member Login'
   end
 
@@ -63,6 +96,5 @@ class ArticlesController < ApplicationController
   def load_comments
     @comments = @article.comments.find_all
   end
-  #params.permit(:article)
 
 end

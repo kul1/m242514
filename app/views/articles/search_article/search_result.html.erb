@@ -1,0 +1,40 @@
+<%- @articles = Article.all  %>
+<!--
+Replace @articles with @models
+-->
+<% @title= "My Articles" %>
+<p></p>
+<% @page_title  = 'All Articlces' %>
+<table id="article-table">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Delete</th>
+    <th>Edit  </th>
+  </tr>
+  <% @articles.each do |article| %>
+      <tr>
+        <td>
+          <%= link_to article.title, :controller=>"articles", :action=>"show", :id=>article.id %>
+        </td>
+        <td>
+          <%= article.text.html_safe %>
+        </td>
+        <td>
+          <%= article.created_at.strftime('%m/%d/%Y') %>
+        </td>
+        <td>
+          <%= article.updated_at.strftime('%m/%d/%Y') %>
+        </td>
+        <td>
+          <%= link_to image_tag('delete.png', style:'border:none; float:none;')  %>
+        </td>
+        <td>
+          <%= link_to image_tag('pencil.png', style:'border:none; float:none;') %>
+        </td>
+
+      </tr>
+  <% end %>
+</table>
