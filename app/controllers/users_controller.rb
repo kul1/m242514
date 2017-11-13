@@ -5,6 +5,12 @@ class UsersController < ApplicationController
     @xmains = current_ma_user.xmains.in(status:['R','I']).asc(:created_at)
   end
 
+  def show
+    ## Bugs as devise kick to show when logout
+    session[:user_id] = nil
+    # redirect_to '/mindapp/help'
+    refresh_to root_path  end
+
   # mindapp methods
   def update_user
     # can't use session, current_ma_user inside mindapp methods
@@ -22,6 +28,8 @@ class UsersController < ApplicationController
       ma_log "Unauthorized access"
     end
   end
-
+def user_params
+      params.require(:user).permit(:username, :email, :password, :password_confirmation)
+end
 
 end

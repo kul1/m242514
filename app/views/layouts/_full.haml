@@ -25,6 +25,8 @@
         %div{{"data-role" => "header"}.merge(backbtn)}
           %h1= @title || DEFAULT_TITLE
         %div{"data-role" => "content"}
+          %p.notice= notice
+          %p.alert= alert
           = yield
       = render :partial => "mindapp/static"
 :javascript

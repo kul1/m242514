@@ -612,3 +612,10 @@ class MindappController < ApplicationController
     File.open path, "rb" do |f| f.read end
   end
 end
+###################################################################################3
+## (gem) mindapp2/lib/helpers.rb
+# def login?
+#   session[:user_id] != nil
+# end
+###################################################################################3
+
